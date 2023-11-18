@@ -1,0 +1,39 @@
+# mengatur versi dari docker compose
+version: "3.7"
+
+# mendefinisikan services
+services:
+  # mendefinisikan container item-app, yang mana nanti akan bernama = {folder saat ini}_item-app-1
+  item-app:
+    # menggunakan image dari image yang saya buat di github packages
+    image: ghcr.io/gunzxx/item-app:v1
+    # menjalankan perintah npm install, npm build, dan npm start secara otomatis ketika container dijalankan
+    command: sh -c "npm install --production --unsafe-perm && npm run build && npm start"
+    # command: npm start
+    # mendefinisikan port yang akan digunakan pada container yaitu pada port 8080
+    ports:
+      - 8080:8080
+    # mengatur working direktori container pada folder /app
+    working_dir: /app
+    # memberikan restart policy yang mana container akan selalu restart ketika berhenti
+    restart: always
+    # mendefinisikan environment
+    environment:
+      NODE_ENV: production
+      DB_HOST: item-db
+  # mendefinisikan container item-db, yang mana nanti akan bernama = {folder saat ini}_item-db-1
+  item-db:
+    # menggunakan image dari mongo dengan tag 3
+    image: mongo:3
+    # mendefinisikan port yang akan digunakan pada container yaitu pada port 27017
+    ports:
+      - 27017:27017
+    # mengatur volume bernama app-db pada folder /data/db di container
+    volumes:
+      - app-db:/data/db
+    # memberikan restart policy yang mana container akan selalu restart ketika berhenti
+    restart: always
+    
+# membuat volume baru yang nantinya bernama {folder saat ini}_app-db
+volumes:
+  app-db:
