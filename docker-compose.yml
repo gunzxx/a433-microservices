@@ -9,7 +9,6 @@ services:
     image: ghcr.io/gunzxx/item-app:v1
     # menjalankan perintah npm install, npm build, dan npm start secara otomatis ketika container dijalankan
     command: sh -c "npm install --production --unsafe-perm && npm run build && npm start"
-    # command: npm start
     # mendefinisikan port yang akan digunakan pada container yaitu pada port 8080
     ports:
       - 8080:8080

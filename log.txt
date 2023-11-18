@@ -1,64 +1,50 @@
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=a15305d90a7c
 proyek-1-item-app-1  | 
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten] db version v3.6.23
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten] allocator: tcmalloc
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten] modules: none
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten] build environment:
 proyek-1-item-app-1  | > @gunzxx/item-app@1.0.0 preinstall /app
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=24257f463685
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten] db version v3.6.23
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
 proyek-1-item-app-1  | > npx npm-force-resolutions
 proyek-1-item-app-1  | 
-proyek-1-item-app-1  | npx: installed 6 in 6.42s
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten]     distarch: x86_64
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten]     target_arch: x86_64
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I STORAGE  [initandlisten] 
-proyek-1-item-app-1  | audited 664 packages in 22.235s
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+proyek-1-item-app-1  | npx: installed 6 in 2.339s
+proyek-1-item-app-1  | audited 664 packages in 13.401s
 proyek-1-item-app-1  | 
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten] modules: none
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten] build environment:
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten]     distarch: x86_64
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
 proyek-1-item-app-1  | 12 packages are looking for funding
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
 proyek-1-item-app-1  |   run `npm fund` for details
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I STORAGE  [initandlisten] 
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
 proyek-1-item-app-1  | 
 proyek-1-item-app-1  | found 98 vulnerabilities (7 low, 34 moderate, 46 high, 11 critical)
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+proyek-1-item-db-1   | 2023-11-18T09:45:43.760+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3427M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+proyek-1-item-db-1   | 2023-11-18T09:45:44.265+0000 I STORAGE  [initandlisten] WiredTiger message [1700300744:265750][1:0x7f28a6118a40], txn-recover: Main recovery loop: starting at 13/4736
 proyek-1-item-app-1  |   run `npm audit fix` to fix them, or `npm audit` for details
 proyek-1-item-app-1  | 
 proyek-1-item-app-1  | > @gunzxx/item-app@1.0.0 build /app
 proyek-1-item-app-1  | > node ./node_modules/gulp/bin/gulp.js
 proyek-1-item-app-1  | 
-proyek-1-item-app-1  | [08:33:37] Using gulpfile /app/gulpfile.js
-proyek-1-item-app-1  | [08:33:37] Starting 'scripts'...
-proyek-1-item-app-1  | [08:33:40] Finished 'scripts' after 3.25 s
-proyek-1-item-app-1  | [08:33:40] Starting 'default'...
-proyek-1-item-app-1  | [08:33:40] Finished 'default' after 25 μs
-proyek-1-item-db-1   | 2023-11-18T08:32:57.386+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3427M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
-proyek-1-item-db-1   | 2023-11-18T08:32:57.826+0000 I STORAGE  [initandlisten] WiredTiger message [1700296377:826122][1:0x7f3301e98a40], txn-recover: Set global recovery timestamp: 0
-proyek-1-item-app-1  | 
-proyek-1-item-app-1  | > @gunzxx/item-app@1.0.0 start /app
-proyek-1-item-app-1  | > node ./bin/www
-proyek-1-item-app-1  | 
-proyek-1-item-app-1  | NODE_ENV: production
-proyek-1-item-app-1  | Connected to database
-proyek-1-item-db-1   | 2023-11-18T08:32:57.855+0000 I CONTROL  [initandlisten] 
-proyek-1-item-db-1   | 2023-11-18T08:32:57.855+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
-proyek-1-item-db-1   | 2023-11-18T08:32:57.855+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
-proyek-1-item-db-1   | 2023-11-18T08:32:57.855+0000 I CONTROL  [initandlisten] 
-proyek-1-item-db-1   | 2023-11-18T08:32:57.855+0000 I CONTROL  [initandlisten] 
-proyek-1-item-db-1   | 2023-11-18T08:32:57.855+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
-proyek-1-item-db-1   | 2023-11-18T08:32:57.855+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
-proyek-1-item-db-1   | 2023-11-18T08:32:57.855+0000 I CONTROL  [initandlisten] 
-proyek-1-item-db-1   | 2023-11-18T08:32:57.855+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 1f566d81-613c-49a6-be27-ff6a3ece66ec
-proyek-1-item-db-1   | 2023-11-18T08:32:57.865+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
-proyek-1-item-db-1   | 2023-11-18T08:32:57.866+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 3eb10fac-c0d3-4506-803d-97dae6cf7693
-proyek-1-item-db-1   | 2023-11-18T08:32:57.876+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
-proyek-1-item-db-1   | 2023-11-18T08:32:57.876+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
-proyek-1-item-db-1   | 2023-11-18T08:32:57.876+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: e4573723-ec05-4da1-ae6e-d1ba6572f048
-proyek-1-item-db-1   | 2023-11-18T08:32:57.876+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
-proyek-1-item-db-1   | 2023-11-18T08:32:57.876+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
-proyek-1-item-db-1   | 2023-11-18T08:32:57.893+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
-proyek-1-item-db-1   | 2023-11-18T08:32:57.893+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
-proyek-1-item-db-1   | 2023-11-18T08:32:57.894+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
-proyek-1-item-db-1   | 2023-11-18T08:33:47.744+0000 I NETWORK  [listener] connection accepted from 172.26.0.3:48192 #1 (1 connection now open)
-proyek-1-item-db-1   | 2023-11-18T08:33:47.749+0000 I NETWORK  [conn1] received client metadata from 172.26.0.3:48192 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.90.1-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+proyek-1-item-app-1  | [09:45:58] Using gulpfile /app/gulpfile.js
+proyek-1-item-app-1  | [09:45:58] Starting 'scripts'...
+proyek-1-item-db-1   | 2023-11-18T09:45:44.347+0000 I STORAGE  [initandlisten] WiredTiger message [1700300744:347914][1:0x7f28a6118a40], txn-recover: Recovering log 13 through 14
+proyek-1-item-db-1   | 2023-11-18T09:45:44.392+0000 I STORAGE  [initandlisten] WiredTiger message [1700300744:392633][1:0x7f28a6118a40], txn-recover: Recovering log 14 through 14
+proyek-1-item-db-1   | 2023-11-18T09:45:44.427+0000 I STORAGE  [initandlisten] WiredTiger message [1700300744:427861][1:0x7f28a6118a40], txn-recover: Set global recovery timestamp: 0
+proyek-1-item-db-1   | 2023-11-18T09:45:44.446+0000 I CONTROL  [initandlisten] 
+proyek-1-item-db-1   | 2023-11-18T09:45:44.446+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+proyek-1-item-db-1   | 2023-11-18T09:45:44.446+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+proyek-1-item-db-1   | 2023-11-18T09:45:44.446+0000 I CONTROL  [initandlisten] 
+proyek-1-item-db-1   | 2023-11-18T09:45:44.446+0000 I CONTROL  [initandlisten] 
+proyek-1-item-db-1   | 2023-11-18T09:45:44.446+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+proyek-1-item-db-1   | 2023-11-18T09:45:44.446+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+proyek-1-item-db-1   | 2023-11-18T09:45:44.446+0000 I CONTROL  [initandlisten] 
+proyek-1-item-db-1   | 2023-11-18T09:45:44.448+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+proyek-1-item-db-1   | 2023-11-18T09:45:44.448+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+proyek-1-item-db-1   | 2023-11-18T09:45:44.448+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+proyek-1-item-db-1   | 2023-11-18T09:45:44.448+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
