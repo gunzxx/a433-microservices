@@ -22,7 +22,7 @@ jobs:
           name: Build and Push Docker Image
           command: |
             docker build -t gunzxx/karsajobs-ui:latest .
-            docker login -u gunzxx -p Konfirmasi_
+            docker login -u gunzxx -p ${pw}
             docker push gunzxx/karsajobs-ui:latest
 
 workflows:
