@@ -1,0 +1,22 @@
+version: 2.1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: lint-dockerfile
+      run: |
+        sudo apt-get install -y docker
+        docker pull hadolint/hadolint
+        docker run --rm -i hadolint/hadolint < Dockerfile
+
+    - name: test-app
+      run: go test -v -short --count=1 $(go list ./...)
+
+    - name: build-app-karsajobs
+      run: |
+        # Your build and push commands here
