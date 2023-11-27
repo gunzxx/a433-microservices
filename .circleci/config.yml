@@ -35,7 +35,7 @@ jobs:
             docker push gunzxx/karsajobs:latest
 
 workflows:
-  say-hello-workflow:
+  karsajobs-ci:
     jobs:
       - lint-dockerfile
       - test-app
