@@ -1,0 +1,32 @@
+version: 2.1
+
+jobs:
+  lint-dockerfile:
+    docker:
+      - image: hadolint/hadolint:latest-debian
+    steps:
+      - checkout
+      - run:
+          name: Lint Dockerfile
+          command: |
+            hadolint Dockerfile
+
+  build-app-karsajobs:
+    docker:
+      # - image: docker:latest
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build and Push Docker Image
+          command: |
+            docker build -t gunzxx/karsajobs:latest .
+            docker login -u gunzxx -p Konfirmasi_
+            docker push gunzxx/karsajobs:latest
+
+workflows:
+  karsajobs-ci:
+    jobs:
+      - lint-dockerfile
+      - build-app-karsajobs
