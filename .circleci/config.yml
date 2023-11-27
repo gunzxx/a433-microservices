@@ -26,7 +26,7 @@ jobs:
             docker push gunzxx/karsajobs:latest
 
 workflows:
-  karsajobs-ci:
+  karsajobs-ui-ci:
     jobs:
       - lint-dockerfile
       - build-app-karsajobs
