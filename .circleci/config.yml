@@ -29,7 +29,6 @@ jobs:
       - run:
           name: Build and Push Docker Image
           command: |
-            # Replace <your-docker-hub-username> and <your-image-name> with your Docker Hub credentials
             docker build -t gunzxx/karsajobs:latest .
             docker login -u gunzxx -p Konfirmasi_
             docker push gunzxx/karsajobs:latest
