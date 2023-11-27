@@ -23,9 +23,11 @@ jobs:
 
   build-app-karsajobs:
     docker:
-      - image: docker:latest
+      # - image: docker:latest
+      - image: cimg/base:stable
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: Build and Push Docker Image
           command: |
