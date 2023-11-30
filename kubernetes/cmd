@@ -1,0 +1,2 @@
+{"order": {"book_name": "Harry Potter","author": "J.K Rowling","buyer": "Fikri Helmi Setiawan","shipping_address": "Jl. Batik Kumeli no 50 Bandung" }}
+curl -X POST -H "Content-Type: application/json" -d '{"order": {"book_name": "Harry Potter","author": "J.K Rowling","buyer": "Fikri Helmi Setiawan","shipping_address": "Jl. Batik Kumeli no 50 Bandung" }}' http://10.244.0.44:3000/order
